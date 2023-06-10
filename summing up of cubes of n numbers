@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int n, number, sum = 0;
+
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
+
+    printf("Enter %d numbers:\n", n);
+    for (int i = 1; i <= n; i++) {
+        scanf("%d", &number);
+        sum += (number * number * number); // Cube of the current number
+    }
+
+    printf("The sum of cubes is: %d\n", sum);
+
+    return 0;
+}
